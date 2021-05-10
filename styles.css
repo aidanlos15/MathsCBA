@@ -1,0 +1,91 @@
+.mainheading {
+  padding: 1rem 0 1rem 0;
+  width: 100%;
+  background-color: black;
+  color: black;
+  text-align: center;
+}
+
+.buttonA, .buttonACircle, .buttonVSphere, .buttonMiles, .buttonCelsius, .buttonStone, .buttonEuro, .mph{
+  position: absolute;
+  top: 15rem;
+  left: 9.2%;
+  width: 10rem;
+  height: 10rem;
+}
+
+.buttonV, .buttonASquare, .buttonVCone, .buttonKilometres, .buttonFahreneit, .buttonPound, .buttonDollars, .kph {
+  position: absolute;
+  top: 15rem;
+  left: 32%;
+  width: 10rem;
+  height: 10rem;
+}
+
+.buttonL, .buttonATriangle, .buttonVCylinder, .buttonYards, .buttonKelvin, .buttonKilogram, .buttonBitcoin, .lightspeed {
+  position: absolute;
+  top: 15rem;
+  right: 32%;
+  width: 10rem;
+  height: 10rem;
+}
+
+.buttonT, .buttonASphere, .buttonVCube, .buttonLight, .buttonRankine , .buttonTon, .buttonDogecoin,  .mps{
+  position: absolute;
+  top: 15rem;
+  Right: 9.2%;
+  width: 10rem;
+  height: 10rem;
+}
+
+
+
+
+
+.buttonW {
+  position: absolute;
+  top: 32.5rem;
+  left: 9.2%;
+  width: 10rem;
+  height: 10rem;
+}
+
+.buttonC {
+  position: absolute;
+  top: 32.5rem;
+  left: 32%;
+  width: 10rem;
+  height: 10rem;
+}
+
+.buttonS {
+  position: absolute;
+  top: 32.5rem;
+  right: 32%;
+  width: 10rem;
+  height: 10rem;
+}
+
+.buttonG {
+  position: absolute;
+  top: 32.5rem;
+  Right: 9.2%;
+  width: 10rem;
+  height: 10rem;
+}
+
+.theis {
+  text-align: center;
+  font-size: 3rem
+}
+
+.answer {
+  text-align: center;
+  font-size: 2rem;
+
+}
+
+.home-button {
+  text-align: center;
+
+}

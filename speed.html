@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Speed</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+</head>
+
+<body class="mt-5">
+
+  <div class="text-center">
+    <a href="index.html"><button class="home-button mt-5 btn btn-dark btn-lg" type="button" name="button">Home</button></a>
+  </div>
+
+
+  <div class="">
+    <button class="mph btn btn-primary" type="button" name="button">MPH</button>
+    <button class="kph btn btn-primary" type="button" name="button">KPH</button>
+    <button class="lightspeed btn btn-primary" type="button" name="button">Lightspeed</button>
+    <button class="mps btn btn-primary" type="button" name="button">Mps</button>
+
+  </div>
+
+  <script type="text/javascript">
+    document.querySelector(".mph").addEventListener("click", metresToMiles)
+    document.querySelector(".kph").addEventListener("click", metresToKilometres)
+    document.querySelector(".lightspeed").addEventListener("click", metresToLightspeed)
+    document.querySelector(".mps").addEventListener("click", kilosToMetres)
+
+
+
+    function metresToMiles() {
+      var metres = prompt("What is the speed in metres per second ?");
+      var miles = metres * 2.237;
+      alert("The speed is " + miles + "miles per hour");
+
+    }
+
+    function metresToKilometres() {
+      var metres = prompt("What is the speed in metres per second ?");
+      var kilos = metres * 3.6;
+      alert("The speed is " + kilos + "kilometres per hour");
+    }
+
+    function metresToLightspeed() {
+      var metres = prompt("What is the speed in metres per second ?");
+      var lightspeed = metres / 299792458;
+      alert("The speed is " + lightspeed + " x the speed of light");
+    }
+
+    function kilosToMetres() {
+      var kilometres = prompt("What is the speed in KPH ?");
+      var mps = kilometres / 3.6;
+      alert("The speed is " + kilometres + "metres per second");
+    }
+  </script>
+
+
+</body>
+
+</html>

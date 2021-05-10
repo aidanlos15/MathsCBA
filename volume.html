@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Volume</title>
+
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+</head>
+
+<body class="mt-5">
+
+  <div class="text-center">
+    <a href="index.html"><button class="home-button mt-5 btn btn-dark btn-lg" type="button" name="button">Home</button></a>
+  </div>
+
+  <div class="">
+
+    <button class="buttonVSphere btn btn-primary" type="button" name="button">Sphere</button>
+    <button class="buttonVCone btn btn-primary" type="button" name="button">Cone</button>
+    <button class="buttonVCylinder btn btn-primary" type="button" name="button">Cylinder</button>
+    <button class="buttonVCube btn btn-primary" type="button" name="button">Cube</button>
+  </div>
+
+  <script type="text/javascript">
+    document.querySelector(".buttonVSphere").addEventListener("click", volumeOfSphere)
+    document.querySelector(".buttonVCone").addEventListener("click", volumeOfCone)
+    document.querySelector(".buttonVCylinder").addEventListener("click", volumeOfCylinder)
+    document.querySelector(".buttonVCube").addEventListener("click", volumeOfCube)
+
+    function volumeOfSphere() {
+      var radius = prompt("What is the radius of the sphere in cm ?")
+      var volume = (4 / 3) * Math.PI * Math.pow(radius, 3);
+      alert("The volume of the sphere is " + volume.toFixed(2) + " cm3")
+    }
+
+    function volumeOfCone(){
+      var radius = prompt("What is the radius of the cone in cm ?")
+      var height = prompt("What is the height of the cone in cm ?")
+      var volume = height * Math.PI * (radius * radius) / 3;
+      alert("The volume of the cone is " + volume.toFixed(2) + " cm3")
+    }
+
+    function volumeOfCylinder() {
+      var radius = prompt("What is the radius of the cylinder in cm ?")
+      var height = prompt("What is the height of the cylinder in cm ?")
+      var volume = height * Math.PI * (radius * radius);
+      alert("The volume of the cylinder is " + volume.toFixed(2) + " cm3")
+    }
+
+    function volumeOfCube() {
+      var length = prompt("What is the length one side of the cube in cm ?")
+      var volume = Math.pow(length, 3);
+      alert("The volume of the cube is " + volume.toFixed(2) + "cm3");
+    }
+
+  </script>
+
+
+</body>
+
+</html>
