@@ -27,7 +27,7 @@
   </div>
 
   <script type="text/javascript">
-    document.querySelector(".mph").addEventListener("click", metresToMiles)
+    document.querySelector(".mph").addEventListener("click", kilosToMiles)
     document.querySelector(".kph").addEventListener("click", metresToKilometres)
     document.querySelector(".lightspeed").addEventListener("click", metresToLightspeed)
     document.querySelector(".mps").addEventListener("click", kilosToMetres)
@@ -54,7 +54,7 @@
     }
 
 
-    function KilosToMiles() {
+    function kilosToMiles() {
       var kilos = prompt("What is the speed in kilometres per hour ?");
       var miles = kilos * 0.621371;
       alert("The speed is " + miles + "miles per hour");
