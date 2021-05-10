@@ -14,7 +14,7 @@
   height: 10rem;
 }
 
-.buttonV, .buttonASquare, .buttonVCone, .buttonKilometres, .buttonFahreneit, .buttonPound, .buttonDollars, .kph,  {
+.buttonV, .buttonASquare, .buttonVCone, .buttonKilometres, .buttonFahreneit, .buttonPound, .buttonDollars, .kph {
   position: absolute;
   top: 15rem;
   left: 32%;
@@ -22,7 +22,7 @@
   height: 10rem;
 }
 
-.buttonL, .buttonATriangle, .buttonVCylinder, .buttonYards, .buttonKelvin, .buttonKilogram, .buttonBitcoin, .lightspeed,  {
+.buttonL, .buttonATriangle, .buttonVCylinder, .buttonYards, .buttonKelvin, .buttonKilogram, .buttonBitcoin, .lightspeed {
   position: absolute;
   top: 15rem;
   right: 32%;
