@@ -50,7 +50,7 @@
   height: 10rem;
 }
 
-.buttonC, .finalV {
+.buttonC {
   position: absolute;
   top: 32.5rem;
   left: 32%;
@@ -58,7 +58,7 @@
   height: 10rem;
 }
 
-.buttonS, .dOT {
+.buttonS {
   position: absolute;
   top: 32.5rem;
   right: 32%;
