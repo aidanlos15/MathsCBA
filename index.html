@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+
+ <!-- links -->
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <h1 class="mainheading">MathsCba</h1>
+
+  <div class="">
+
+    <a href="area.html"><button class="buttonA btn btn-primary"type="button" name="button">Area</button></a>
+    <a href="volume.html"><button class="buttonV btn btn-primary"type="button" name="button">Volume</button></a>
+    <a href="distance.html"><button class="buttonL btn btn-primary"type="button" name="button">Distance</button></a>
+    <a href="temperature.html"><button class="buttonT btn btn-primary"type="button" name="button">Temperature</button></a>
+
+  </div>
+
+  <div class="">
+    <a href="weight.html"><button class="buttonW btn btn-primary"type="button" name="button">Weight</button></a>
+    <a href="currency.html"><button class="buttonC btn btn-primary"type="button" name="button">Currency</button></a>
+    <a href="speed.html"><button class="buttonS btn btn-primary"type="button" name="button">Speed</button></a>
+    <button class="buttonG btn btn-primary"type="button" name="button">Gravitation</button>
+
+
+    <script type="text/javascript">
+    document.querySelector(".buttonG").addEventListener("click", gravitation)
+
+    function gravitation () {
+      var distance = prompt("What is the distance between the two objects")
+      var mass1 = prompt("What is the mass of object one ?");
+      var mass2 = prompt("What is the mass of object two ?");
+
+      var g = 6.673 * (10**-11)
+      var f = (g*mass1*mass2)/ (distance)
+
+      alert("The force of gravity between the two objects is " + f.toFixed(2) + "N")
+
+    }
+
+    </script>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

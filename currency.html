@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Currency</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+</head>
+
+<body class="mt-5">
+
+  <div class="text-center">
+    <a href="index.html"><button class="home-button mt-5 btn btn-dark btn-lg" type="button" name="button">Home</button></a>
+  </div>
+
+
+  <div class="">
+    <button class="buttonEuro btn btn-primary" type="button" name="button">Euro</button>
+    <button class="buttonDollars btn btn-primary" type="button" name="button">Dollars</button>
+    <button class="buttonBitcoin btn btn-primary" type="button" name="button">Bitcoin</button>
+    <button class="buttonDogecoin btn btn-primary" type="button" name="button">Dogecoin</button>
+
+  </div>
+
+  <script type="text/javascript">
+    document.querySelector(".buttonEuro").addEventListener("click", dollarToEuro)
+    document.querySelector(".buttonDollars").addEventListener("click", euroToDollars)
+    document.querySelector(".buttonBitcoin").addEventListener("click", euroToBitcoin)
+    document.querySelector(".buttonDogecoin").addEventListener("click", euroToDogecoin)
+
+
+
+    function dollarToEuro() {
+      var dollar = prompt("What is the value in Dollars ?");
+      var euro = dollar / 1.22;
+      alert("The value is " + euro.toFixed(2) + "euros");
+    }
+
+    function euroToDollars() {
+      var euro = prompt("What is the value in euro ?");
+      var dollar = euro * 1.22;
+      alert("The value is " + dollar.toFixed(2) + "US dollars");
+
+    }
+
+    function euroToBitcoin() {
+      var euro = prompt("What is the value in euro ?");
+      var bitcoin = euro / 50000;
+      alert("The value is " + bitcoin.toFixed(2) + "bitcoin");
+    }
+
+    function euroToDogecoin() {
+      var euro = prompt("What is the value in euro ?");
+      var doge = euro * 2.47;
+      alert("The value is " + doge.toFixed(2) + "dogecoin");
+    }
+  </script>
+
+
+</body>
+
+</html>

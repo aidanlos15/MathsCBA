@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Area</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+</head>
+
+<body class="mt-5">
+
+  <div class="text-center">
+    <a href="index.html"><button class="home-button mt-5 btn btn-dark btn-lg" type="button" name="button">Home</button></a>
+  </div>
+
+
+  <div class="">
+    <button class="buttonACircle btn btn-primary" type="button" name="button">Circle</button>
+    <button class="buttonASquare btn btn-primary" type="button" name="button">Square</button>
+    <button class="buttonATriangle btn btn-primary" type="button" name="button">Triangle</button>
+    <button class="buttonASphere btn btn-primary" type="button" name="button">Sphere</button>
+
+  </div>
+
+  <script type="text/javascript">
+    document.querySelector(".buttonACircle").addEventListener("click", areaOfCircle)
+    document.querySelector(".buttonASquare").addEventListener("click", areaOfSquare)
+    document.querySelector(".buttonASphere").addEventListener("click", areaOfSphere)
+    document.querySelector(".buttonATriangle").addEventListener("click", areaOfTriangle)
+
+
+
+    function areaOfCircle() {
+      var radius = prompt("What is the radius of the circle in cm ?");
+      var area = 3.14159 * (radius * radius)
+      alert("the area of the circle is " + area.toFixed(2) + " cm2");
+    }
+
+    function areaOfSquare() {
+      var radius = prompt("What is the length of one side of the square in cm ?");
+      var area = radius * radius;
+      alert("the area of the square is " + area + " cm2");
+    }
+
+    function areaOfSphere() {
+      var radius = prompt("What is the radius of the sphere in cm ?");
+      var area = (4 * 3.14159) * (radius * radius);
+      alert("the area of the sphere is " + area.toFixed(2) + " cm2");
+    }
+
+    function areaOfTriangle() {
+      var base = prompt("What is the length of of the base in cm ?");
+      var height = prompt("What is the height of the triangle in cm ?");
+      var area = (base * height) / 2;
+      alert("The area of the triangle is " + area + " cm2")
+    }
+  </script>
+
+
+</body>
+
+</html>

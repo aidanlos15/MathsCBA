@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Distance</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+</head>
+
+<body class="mt-5">
+
+  <div class="text-center">
+    <a href="index.html"><button class="home-button mt-5 btn btn-dark btn-lg" type="button" name="button">Home</button></a>
+  </div>
+
+
+  <div class="">
+    <button class="buttonMiles btn btn-primary" type="button" name="button">Miles</button>
+    <button class="buttonKilometres btn btn-primary" type="button" name="button">kilometres</button>
+    <button class="buttonYards btn btn-primary" type="button" name="button">Yards</button>
+    <button class="buttonLight btn btn-primary" type="button" name="button">Lightseconds</button>
+  </div>
+
+  <script type="text/javascript">
+    document.querySelector(".buttonMiles").addEventListener("click", distanceInMiles)
+    document.querySelector(".buttonKilometres").addEventListener("click", distanceInKilometres)
+    document.querySelector(".buttonYards").addEventListener("click", distanceInYards)
+    document.querySelector(".buttonLight").addEventListener("click", distanceInLightyears)
+
+
+
+    function distanceInMiles() {
+      var metres = prompt("What is the distance in metres");
+      var miles = 1609.34 / metres;
+      alert("The distance is " + miles.toFixed(2) + " miles");
+    }
+
+
+    function distanceInKilometres() {
+      var metres = prompt("What is the distance in metres");
+      var kilometres = 1000 / metres;
+      alert("the distance is " + kilometres + " kilometres");
+    }
+
+    function distanceInYards() {
+      var metres = prompt("What is the distance in metres");
+      var yards = 0.9114 / metres;
+      alert("the distance is  " + yards.toFixed(2) + " yards");
+    }
+
+    function distanceInLightyears() {
+      var kilometres = prompt("What is the distance in kilometres");
+      var lightyear = 299792.458 / kilometres;
+      alert("the distance is " + lightyear + " in Lightseconds")
+    }
+
+  </script>
+
+
+</body>
+
+</html>
