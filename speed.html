@@ -20,6 +20,9 @@
     <button class="kph btn btn-primary" type="button" name="button">KPH</button>
     <button class="lightspeed btn btn-primary" type="button" name="button">Lightspeed</button>
     <button class="mps btn btn-primary" type="button" name="button">Mps</button>
+    
+    <button class="finalV btn btn-primary" type="button" name="button">Final velocity</button>
+    <button class="dOT btn btn-primary" type="button" name="button">Speed</button>
 
   </div>
 
@@ -28,7 +31,27 @@
     document.querySelector(".kph").addEventListener("click", metresToKilometres)
     document.querySelector(".lightspeed").addEventListener("click", metresToLightspeed)
     document.querySelector(".mps").addEventListener("click", kilosToMetres)
+    
+    document.querySelector(".finalV").addEventListener("click", finalVelocity)
+    document.querySelector(".dOT").addEventListener("click", distanceOverTime)
+    
+    function finalVelocity() {
+       var  u = prompt("What was the initial velocity in kph ?");
+       var a =  prompt("What was the acceleration ?");
+       var  t = prompt("What was the time it took in hours ?");
+      var v = u + (a * t);
+       alert("The final velocity is " + v.toFixed(2) + " kilometres per hour");
 
+    }
+
+    
+    function distanceOverTime() {
+      var distance = prompt("What was the final distance travelled in kilometres ?");
+      var time =  prompt("What was the time it took to travel the distance in hours ?");
+      var speed = distance / time;
+      alert("The speed is " + speed.toFixed(2) + "kilometres per hour");
+
+    }
 
 
     function KilosToMiles() {
