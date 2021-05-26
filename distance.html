@@ -45,13 +45,13 @@
 
     function distanceInYards() {
       var metres = prompt("What is the distance in metres");
-      var yards = 0.9114 / metres;
+      var yards = metres / 0.91;
       alert("the distance is  " + yards.toFixed(2) + " yards");
     }
 
     function distanceInLightyears() {
       var kilometres = prompt("What is the distance in kilometres");
-      var lightyear = 299792.458 / kilometres;
+      var lightyear = kilometres / 299792.458;
       alert("the distance is " + lightyear + " in Lightseconds")
     }
 
